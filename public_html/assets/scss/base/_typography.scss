@@ -1,0 +1,9 @@
+p {
+	font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1200 - 320)));
+	opacity: .8;
+}
+
+.title { font-size: calc(18px + (18 - 15) * ((100vw - 320px) / (1200 - 320))) }
+
+a { text-decoration: none !important}
+

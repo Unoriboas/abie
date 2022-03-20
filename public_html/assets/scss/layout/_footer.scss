@@ -1,0 +1,26 @@
+.footer {
+
+	.social-links {
+		margin-top: 10px;
+		a {
+			color: $gray-300;
+			font-size: 18px;
+			padding: 0 6px;
+			line-height: 0;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xs) {
+	.footer {
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+		height: auto;
+
+		p {padding-bottom: 10px }
+	 }
+}

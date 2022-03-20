@@ -1,0 +1,39 @@
+/* Page Navbar*/
+.page-navbar {
+	min-height: 90px; 
+	background-color: rgba($gray-800, .2);
+	@include custom-transition(all,.3);
+
+	.navbar-brand {
+		font-size: 30px;
+		@include custom-transition(all,.3)
+	}
+
+	.btn {
+		box-shadow: none !important;
+	}
+
+	.nav-item {
+
+		.nav-link {
+			color: $gray-300;
+			font-weight: 400;
+			&.active {
+				color: $primary;		
+			}				
+		}
+
+			
+	}
+
+	&.affix {
+		min-height: 75px; 
+		background: $gray-800;
+		box-shadow: 0 3px 14px rgba($gray-800, .4);
+
+
+		.navbar-brand {
+			font-size: 24px;
+		}
+	}		
+}

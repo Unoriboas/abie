@@ -1,0 +1,30 @@
+/* forms */
+.form-control {
+	&:focus {
+		border: 1px solid $primary;
+	}
+}
+
+/*utilities*/
+textarea {height: 146px;display: none;}
+.circle-40 {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	border: 2px solid $primary;
+	font-size: 18px;
+	color: $primary;
+}
+.circle-100 {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 65px;
+	border: 2px solid $primary;
+	font-size: 25px;
+	color: $primary;
+	margin: auto;
+}

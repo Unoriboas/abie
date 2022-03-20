@@ -1,0 +1,33 @@
+// buttons
+.btn {
+	@include material-box-shadow($gray-500,.6);
+	@include custom-transition(all,.4);
+
+	&:focus,
+	&:hover,
+	&:active {
+		@include material-hover-box-shadow($gray-500,.6);
+	}
+
+	&.rounded {
+		border-radius: 100px;
+	}
+}
+
+.btn-flat {
+	border-width: 2px;
+	border-radius: 0;
+	line-height: 1;
+	padding: 10px 24px 12px;
+	font-weight: bold;
+	box-shadow: none !important;
+	&:active,
+	&:focus,
+	&:hover {
+		box-shadow: none !important;
+	}
+}
+
+
+
+.btn-light,.btn-outline-light { opacity: .8 }
