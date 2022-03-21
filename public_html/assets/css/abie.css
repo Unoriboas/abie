@@ -280,6 +280,113 @@ button:not(:disabled),
   cursor: pointer;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #000;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #000;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 40px;
+  background-color: var(--secondary);
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--gray-dark);
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -11163,7 +11270,7 @@ a {
 }
 
 /* Pricing cards */
-.pricing-card {
+.contact-card {
   box-shadow: 0 2px 5px 0 rgba(173, 181, 189, 0.3) !important;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -11174,55 +11281,59 @@ a {
   margin-bottom: 20px;
 }
 
-.pricing-card .head {
+.contact-card .head {
   background: #343a40;
   color: var(--gray-dark);
-  padding: 15px 0;
+  padding: 25px 0;
   font-size: 23px;
   font-weight: 400;
   border-bottom: 1px solid #495057;
 }
 
-.pricing-card .body {
+.contact-card .body {
   background: #343a40;
   color: var(--gray-dark);
-  padding: 25px 0 18px;
+  padding: 25px 0 25px;
   border-bottom: 6px solid var(--primary);
 }
 
-.pricing-card .body h1 {
+.contact-card .body h1 {
   padding-right: 8px;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
 }
 
-.pricing-card .body h1 small {
-  font-size: 22px;
+.contact-card .body h1 small {
+  font-size: 20px;
 }
 
-.pricing-card .body p {
+.contact-card .body h2 {
+  font-size: 30px;
+}
+
+.contact-card .body p {
   margin: 0;
   opacity: 1;
   color: var(--dark);
 }
 
-.pricing-card .list-group .list-group-item {
+.contact-card .list-group .list-group-item {
   border-color: rgba(222, 226, 230, 0.3);
   border-radius: 0;
   color: #212529;
 }
 
-.pricing-card .list-group .list-group-item:last-child {
+.contact-card .list-group .list-group-item:last-child {
   border-radius: 0 0 0.3rem 0.3rem !important;
 }
 
-.pricing-card.popular {
+.contact-card.popular {
   margin-top: -42px;
 }
 
-.pricing-card.popular .popular-item {
+.contact-card.popular .popular-item {
   background: var(--primary);
   color: var(--gray-dark);
   font-size: 18px;
@@ -11230,7 +11341,7 @@ a {
   padding: 7px 0 12px;
 }
 
-.pricing-card:hover {
+.contact-card:hover {
   -webkit-transform: translateY(-5px) scale(1.004);
       -ms-transform: translateY(-5px) scale(1.004);
           transform: translateY(-5px) scale(1.004);
@@ -11238,7 +11349,7 @@ a {
 }
 
 @media (max-width: 991.98px) {
-  .pricing-card.popular {
+  .contact-card.popular {
     margin-top: 0;
   }
 }
