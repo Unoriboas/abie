@@ -9,13 +9,13 @@
     <title>Abie's Website</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + abie main styles -->
+    <!-- Bootstrap + ABIE main styles -->
 	<link rel="stylesheet" href="assets/css/abie.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <nav id="scrollspy" class="navbar page-navbar navbar-dark navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong class="text-primary">ABIE's WEBSITE</strong><span class="text-light"></span></a>
+            <a class="navbar-brand" href="#"><strong class="text-primary">ABIE'S WEBSITE</strong><span class="text-light"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,11 +33,9 @@
                     </li>
                     <center>
                         <div class="switch">
-                           <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                           <label for="language-toggle"></label>
-                           <span class="on"><a href="index_en.html">EN</a></span>
-                           <span class="off"><a href="index_fr.html">FR</a></span>
-                         </div>
+                            <li><a href="index_en.html"><strong class="text-white">US</strong></a></li>
+                            <li><a href="index_fr.html"><strong class="text-unselected">FR</strong></li>
+                          </div>
                     </center>
                 </ul>
             </div>
@@ -49,8 +47,8 @@
                 <div class="col-md-7">
                     <div class="header-content">
                         <h3 class="header-title"><strong class="text-primary">ABIE</strong></h3>
-                        <h4 class="header-subtitle"><strong class="text-">Welcome!</strong> </h4>
-                        <p>Feel free to look at the pages below to learn more about my work <p> | and also learn about myself and how to contact me! </p>
+                        <h4 class="header-subtitle"><strong class="text-white">Welcome!</strong> </h4>
+                        <p><normal class="text-white">Feel free to look at the pages below to learn more about my work </normal><p><normal class="text-white">| and also learn about myself and how to contact me!</normal></p>
                         <li class="nav-item">
                             <a class="btn btn-outline-light btn-flat nav-link" href="#aboutme">About Me</a>
                         </li>
@@ -59,14 +57,20 @@
             </div>  
         </div>
     </header>
-    <div class="social-wrapper" id="aboutme">
+    <section class="section" id="aboutme">
         <div class="container">
-            <div class="social-txt">
-                <h6 class="title"><strong class="text-primary">About Me</strong></h6>
-                <p> <class="subtitle"><strong class="text-white">Below, you will find information about me, Abie G.</strong></p>
-            </div>
-        </div>          
-    </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-8">
+                    <h1><strong class="text-primary">ABOUT ME</strong></h1>
+                    <p> <class="subtitle"><strong class="text-white">Below, you will find information about me, Abie G.</strong></p>
+                    <p><normal class="text-white">Let me present myself. My name is Angel GUERRAZ but all my friends calls me Abie, I am 17 years old and I was born the 03/10/2004 in Annecy in High-Savoy.</normal></p>
+                    <p><normal class="text-white">I'm currently studying at René Perrin in Ugine, and I am living in Albertville.</normal></p>
+                    <p><normal class="text-white">I have a lot of experience in graphic design and coding and I wish to be able to work in these domains.</normal></p>
+                    <span class="spoiler">I identify as a trans woman, and I would like to be called by the name "Abie" and the pronouns "she/her".</span>
+                </div>
+            </div>                  
+        </div>                      
+    </section>
     <section class="section">
         <div class="container">
             <div class="row justify-content-around">
@@ -87,12 +91,12 @@
                             <div class="tab-pane fade show active" id="pills-home">
                                 <h4 class="title"><strong class="text-primary">School Projects</strong></h4>
                                 <p><strong class="text-white">At school, I have been working on various things but mostly, my projects have consisted of working on robots like a vacuum, which would detect objects in it's way and avoid them in order to clean more efficiently.</strong></p>
-                                <p><strong class="text-white">My latest project involves working on a smart lock which will use a 6-digit hex code or a fingerprint scanner to unlock the door and be able to open it.</strong></p>
+                                <p><strong class="text-white">My latest project involves working on a smart lock which will use a 6-digit HEX code or a fingerprint scanner to unlock the door and be able to open it.</strong></p>
                             </div>
                             <div class="tab-pane fade" id="pills-profile">
                                 <h4 class="title"><strong class="text-primary">My Work</strong></h4>
                                 <p><strong class="text-white">Online, I work by myself in graphic design, web development, and just coding in general!</strong>/p>
-								<p><strong class="text-white">I have done a lot of banners, profile pictures and just websites for people in my entourage who needed the help, mostly needing a payment of 20€ to do so.</strong></p>
+								<p><strong class="text-white">I have done a lot of banners, profile pictures and just websites for people in my entourage who needed the help.</strong></p>
                             </div>
                             <div class="tab-pane fade" id="pills-contact">
                                 <h4 class="title"><strong class="text-primary">My Experience</strong></h4>
@@ -128,7 +132,7 @@
                 <div class="col-lg-4">
                     <div class="circle-100 mb-3"><i class="ti-game"></i></div>
                     <h6 class="title mb-3"><strong class="text-white">LANGUAGES</strong></h6>
-                    <p><normal class="text-white">C++, HTML, CSS, Lua, Python 3+, JavaScript, json</normal></p>
+                    <p><normal class="text-white">English, French, Spanish, C++, HTML, CSS, Lua, Python 3+, JavaScript, json</normal></p>
                 </div>
             </div>
         </div>
@@ -252,7 +256,7 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
 	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <!-- abie js -->
-    <script src="assets/js/abie.js"></script>
+    <!-- ABIE js -->
+    <script src="assets/js/ABIE.js"></script>
 </body>
 </html>
