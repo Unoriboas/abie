@@ -11299,14 +11299,14 @@ a {
   transition: all 0.3s;
   border-radius: 0.3rem;
   overflow: hidden;
-  background-color: var(--gray-dark);
+  background-color: var(--darkk);
   display: block;
   margin-bottom: 20px;
 }
 
 .contact-card .head {
-  background: #343a40;
-  color: var(--gray-dark);
+  background: var(--gray-dark);
+  color: var(--dark);
   padding: 25px 0;
   font-size: 23px;
   font-weight: 400;
@@ -11314,8 +11314,8 @@ a {
 }
 
 .contact-card .body {
-  background: #343a40;
-  color: var(--gray-dark);
+  background: var(--gray-dark);
+  color: var(--dark);
   padding: 25px 0 25px;
   border-bottom: 6px solid var(--primary);
 }
@@ -11358,7 +11358,7 @@ a {
 
 .contact-card.popular .popular-item {
   background: var(--primary);
-  color: var(--gray-dark);
+  color: var(--dark);
   font-size: 18px;
   font-weight: 400;
   padding: 7px 0 12px;
