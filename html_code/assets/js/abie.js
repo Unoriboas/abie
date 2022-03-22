@@ -3,7 +3,7 @@
 * Landing page
 =========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
+* Copyright: 2019 DevCRUD (https://devcrud.com), 2022 Unoriboas (https://github.com/Unoriboas)
 * Licensed: (https://devcrud.com/licenses)
 * Coded by www.devcrud.com
 
