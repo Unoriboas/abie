@@ -9163,6 +9163,7 @@ button.bg-dark:focus {
 
 .p-2 {
   padding: 0.5rem !important;
+  background: var(--primary);
 }
 
 .pt-2,
@@ -9187,6 +9188,7 @@ button.bg-dark:focus {
 
 .p-3 {
   padding: 1rem !important;
+  background: var(--primary);
 }
 
 .pt-3,
@@ -11299,7 +11301,7 @@ a {
   transition: all 0.3s;
   border-radius: 0.3rem;
   overflow: hidden;
-  background-color: var(--darkk);
+  background-color: var(--dark);
   display: block;
   margin-bottom: 20px;
 }
