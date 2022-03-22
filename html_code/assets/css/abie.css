@@ -52,6 +52,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -67,6 +68,15 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.glass {
+  background: rgba(26, 0, 78, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgba(26, 0, 78, 0.4);
 }
 
 body {
@@ -714,6 +724,11 @@ pre code {
   .container {
     max-width: 1140px;
   }
+}
+
+.centered {
+  margin: 0 auto;
+  width: 200px;
 }
 
 .container-fluid {
