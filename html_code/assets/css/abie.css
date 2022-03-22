@@ -59,6 +59,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -11293,7 +11299,7 @@ a {
   transition: all 0.3s;
   border-radius: 0.3rem;
   overflow: hidden;
-  background-color: var(--dark);
+  background-color: var(--gray-dark);
   display: block;
   margin-bottom: 20px;
 }
@@ -11339,7 +11345,7 @@ a {
 .contact-card .list-group .list-group-item {
   border-color: rgba(222, 226, 230, 0.3);
   border-radius: 0;
-  color: var(--bg-dark-theme);
+  color: var(--gray-dark);
 }
 
 .contact-card .list-group .list-group-item:last-child {
