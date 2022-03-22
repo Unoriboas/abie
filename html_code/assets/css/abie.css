@@ -1,14 +1,18 @@
 /*!
 =========================================================
-* Abie
+* Landing page
 =========================================================
 
-* Copyright: AAA???
-* Coded by Unoriboas
+* Copyright: 2019 DevCRUD (https://devcrud.com)
+* Licensed: (https://devcrud.com/licenses)
+* Coded by www.devcrud.com
+
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* Imported to make sure everything works!
 */
+
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900");
 :root {
   --blue: #79A9F5;

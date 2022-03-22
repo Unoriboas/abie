@@ -1,6 +1,6 @@
 /*!
 =========================================================
-* Rubic Landing page
+* Landing page
 =========================================================
 
 * Copyright: 2019 DevCRUD (https://devcrud.com)
@@ -10,7 +10,9 @@
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* Imported to make sure everything works!
 */
+
 
 // smooth scroll
 $(document).ready(function(){
