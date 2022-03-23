@@ -2,19 +2,19 @@
 <html lang="en">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 650, function(){
-        window.location.hash = hash;
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 650, function(){
+            window.location.hash = hash;
+          });
+        }
       });
-    }
-  });
-});
+    });
 </script>
 <head>
     
@@ -49,9 +49,11 @@ $(document).ready(function(){
                     </li>
                     <center>
                         <div class="switch">
-                            <li><a href="index_en.html"><strong class="text-white">US</strong></a></li>
-                            <li><a href="index_fr.html"><strong class="text-unselected">FR</strong></li>
-                          </div>
+                            <li>
+                                <a href="index_en.html"><strong class="text-white">US</strong></a>
+                                <a href="index_fr.html"><strong class="text-unselected">FR</strong></a>
+                            </li>
+                        </div>
                     </center>
                 </ul>
             </div>
@@ -89,7 +91,7 @@ $(document).ready(function(){
             </div>                  
         </div>                      
     </section>
-    <section class="section">
+    <section class="section has-gradient-bg">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-lg-8">
@@ -113,7 +115,7 @@ $(document).ready(function(){
                             </div>
                             <div class="tab-pane fade" id="pills-profile">
                                 <h4 class="title"><strong class="text-primary">My Work</strong></h4>
-                                <p><strong class="text-white">Online, I work by myself in graphic design, web development, and just coding in general!</strong>/p>
+                                <p><strong class="text-white">Online, I work by myself in graphic design, web development, and just coding in general!</strong></p>
 								<p><strong class="text-white">I have done a lot of banners, profile pictures and just websites for people in my entourage who needed the help.</strong></p>
                             </div>
                             <div class="tab-pane fade" id="pills-contact">
@@ -124,7 +126,7 @@ $(document).ready(function(){
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block align-self-center">
+                <div class="col-lg-4 d-lg-block align-self-center">
 					<a href="https://www.flickr.com/photos/christiaancolen/20447259789/in/photostream/" class="contact-card">
                     	<img src="assets/imgs/img2.jpg" alt="" class="w-100 p-2">
                         <p><center><small class="text-unselected">Coding Javascript by Christiaan Colen.</small></center></p>
@@ -161,7 +163,7 @@ $(document).ready(function(){
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="section has-gradient-bg">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-5 align-self-center mb-4 mb-md-0">
@@ -244,22 +246,22 @@ $(document).ready(function(){
             <h5 class="mb-5 font-weight-light"><normal class="text-white">Please take a look at some of my work below.</normal></h5>
         </div>
     </section>
-    <section class="section" id="review">
+    <section class="section has-img-bg" id="review">
         <div class="container text-center">
             <h6 class="display-4 has-line"><normal class="text-white">SOME OF MY WORK IN CLASS</normal></h6>
             <p class="mb-5 pb-4"><normal class="text-white">This includes codes made in C++ during class time for the vacuum robot.</normal>></p>
             <div class="row text-left">
-                <div class="col-lg-4 d-none d-lg-block align-self-center">
+                <div class="col-md-4 align-self-center mb-4 mb-md-0">
 					<a href="https://i.imgur.com/iDJ85lO.jpg" class="contact-card">
                     	<img src="assets/imgs/img5.jpg" alt="" class="w-100 p-2">
 					</a>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block align-self-center">
+                <div class="col-md-4 align-self-center mb-4 mb-md-0">
 					<a href="https://i.imgur.com/UeWuyGO.jpg" class="contact-card">
                     	<img src="assets/imgs/img4.jpg" alt="" class="w-100 p-2">
 					</a>
                 </div>
-                <div class="col-lg-4 d-none d-lg-block align-self-center">
+                <div class="col-md-4 align-self-center mb-4 mb-md-0">
 					<a href="https://i.imgur.com/zp6ggxw.jpg" class="contact-card">
                     	<img src="assets/imgs/img6.jpg" alt="" class="w-100 p-2">
 					</a>
@@ -267,11 +269,11 @@ $(document).ready(function(){
             </div>
         </div>
     </section>
-    <div class="section" id="credits">
+    <div class="footer" id="credits">
         <div class="container">
             <div class="social-txt">
                 <h1><center><normal class="text-primary">SOURCES</normal></center></h1>
-                <p><a href="https://p0.piqsels.com/preview/53/932/995/cabin-cold-daylight-fog.jpg" class="link"><center><normal class="text-unselected">"Brown Shed Near Green Pine Trees during Snow", Piqsels</normal></center></a></p>
+                <p><a href="https://wallpapercave.com/wp/wp7384917.jpg" class="link"><center><normal class="text-unselected">"Alone", WallpaperCave</normal></center></a></p>
                 <p><a href="https://www.flickr.com/photos/christiaancolen/20447259789/in/photostream/" class="link"><center><normal class="text-unselected">"Coding Javascript", Christiaan Colen</normal></center></a></p>
                 <p><a href="https://wallpaperboat.com/wp-content/uploads/2019/10/programming-02-920x518.jpg" class="link"><center><normal class="text-unselected">"Programming", WallpapersBoat</normal></center></a></p>
                 <p><a href="https://wallpapersmug.com/large/13377a/cyberpunk-city-buildings-art.jpg" class="link"><center><normal class="text-unselected">"Cyberpunk", WallPapersMug</normal></center></a></p>

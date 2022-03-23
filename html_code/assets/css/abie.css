@@ -79,6 +79,7 @@ li {
   border: 1px solid rgba(26, 0, 78, 0.4);
 }
 
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -4613,6 +4614,11 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+}
+
+.nav-link2 {
+  display: block;
+  padding: 0.1rem 0.5rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -11126,9 +11132,35 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
 }
 
+.has-gradient-bg {
+  background: linear-gradient(to right top, rgb(124, 58, 237), rgb(168, 85, 247), rgb(112, 26, 117));
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--dark);
+  position: relative;
+}
+
+.has-gradient-bg * {
+  position: relative;
+  z-index: 10;
+}
+
 .has-img-bg * {
   position: relative;
   z-index: 10;
+}
+
+.has-gradient-bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .has-img-bg:after {
