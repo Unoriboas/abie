@@ -7910,6 +7910,10 @@ button.bg-dark:focus {
           align-items: center !important;
 }
 
+.align-items-center2 {
+  -webkit-align-items: center !important;
+}
+
 .align-items-baseline {
   -webkit-box-align: baseline !important;
   -webkit-align-items: baseline !important;
