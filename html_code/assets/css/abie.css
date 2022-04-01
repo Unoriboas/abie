@@ -11137,7 +11137,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .has-gradient-bg {
-  background: linear-gradient(to right top, rgb(124, 58, 237), rgb(168, 85, 247), rgb(112, 26, 117));
+  background: linear-gradient(to right top, rgb(77, 36, 148), rgb(92, 47, 135), rgb(56, 12, 59));
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
