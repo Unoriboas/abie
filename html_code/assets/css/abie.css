@@ -11621,16 +11621,6 @@ textarea {
   font-weight: 100;
 }
 
-.header .header-subtitle:after {
-  content: "";
-  width: 60px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--dark);
-  display: block;
-  margin: 20px 0;
-}
-
 .header .header-form {
   display: block;
   background-color: #f8f9fa;
