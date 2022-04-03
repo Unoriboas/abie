@@ -4170,8 +4170,8 @@ input[type="button"].btn-block {
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: var(--dark);
-  background-color: var(--dark)af7;
-  border-color: var(--dark)af7;
+  background-color: var(--dark);
+  border-color: var(--dark);
 }
 
 .custom-control-input:disabled ~ .custom-control-label {
@@ -4470,7 +4470,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-webkit-slider-thumb:active {
-  background-color: var(--dark)af7;
+  background-color: var(--dark);
 }
 
 .custom-range::-webkit-slider-runnable-track {
@@ -4503,7 +4503,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-moz-range-thumb:active {
-  background-color: var(--dark)af7;
+  background-color: var(--dark);
 }
 
 .custom-range::-moz-range-track {
@@ -4538,7 +4538,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-ms-thumb:active {
-  background-color: var(--dark)af7;
+  background-color: var(--dark);
 }
 
 .custom-range::-ms-track {
@@ -7911,6 +7911,7 @@ button.bg-dark:focus {
 }
 
 .align-items-center2 {
+          align-items: center !important;
   -webkit-align-items: center !important;
 }
 
