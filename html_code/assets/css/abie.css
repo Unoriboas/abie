@@ -11485,7 +11485,7 @@ a {
 .testmonial .description {
   margin: auto;
   position: relative;
-  background: #e3e7eb;
+  background: var(--dark);
   box-shadow: 0 2px 5px 0 rgba(173, 181, 189, 0.4) !important;
   border-radius: 0.17rem;
   padding: 15px;
@@ -11497,21 +11497,6 @@ a {
 
 .testmonial .description i {
   opacity: .8;
-}
-
-.testmonial .description:after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 0.17rem;
-  background: inherit;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .testmonial .title {
