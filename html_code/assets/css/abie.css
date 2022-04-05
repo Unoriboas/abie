@@ -11126,32 +11126,48 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/* bg-img */
-.has-img-bg {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg-img.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg-img.jpg);
+.has-gradient-bg2 {
+  background: rgb(95,0,84);
+  background: -moz-linear-gradient(313deg, rgba(95,0,84,1) 0%, rgba(121,9,102,1) 48%, rgba(255,0,251,1) 100%);
+  background: -webkit-linear-gradient(313deg, rgba(95,0,84,1) 0%, rgba(121,9,102,1) 48%, rgba(255,0,251,1) 100%);
+  background: linear-gradient(313deg, rgba(95,0,84,1) 0%, rgba(121,9,102,1) 48%, rgba(255,0,251,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f0054",endColorstr="#ff00fb",GradientType=1);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: var(--dark);
   position: relative;
 }
 
-.has-gradient-bg {
-  background: linear-gradient(to right top, rgb(77, 36, 148), rgb(92, 47, 135), rgb(56, 12, 59));
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  color: var(--dark);
-  position: relative;
-}
-
-.has-gradient-bg * {
+.has-gradient-bg2 * {
   position: relative;
   z-index: 10;
 }
 
-.has-img-bg * {
+.has-gradient-bg2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.has-gradient-bg {
+  background: rgb(77,36,148);
+  background: -moz-linear-gradient(54deg, rgba(77,36,148,1) 0%, rgba(92,47,135,1) 48%, rgba(56,12,59,1) 100%);
+  background: -webkit-linear-gradient(54deg, rgba(77,36,148,1) 0%, rgba(92,47,135,1) 48%, rgba(56,12,59,1) 100%);
+  background: linear-gradient(54deg, rgba(77,36,148,1) 0%, rgba(92,47,135,1) 48%, rgba(56,12,59,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4d2494",endColorstr="#380c3b",GradientType=1);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.has-gradient-bg * {
   position: relative;
   z-index: 10;
 }
@@ -11166,6 +11182,21 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+/* bg-img */
+.has-img-bg {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg-img.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--dark);
+  position: relative;
+}
+.has-img-bg * {
+  position: relative;
+  z-index: 10;
 }
 
 .has-img-bg:after {
