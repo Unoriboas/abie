@@ -11490,13 +11490,8 @@ a {
   border-radius: 0.17rem;
   padding: 15px;
   font-weight: 400;
-  opacity: .6;
   margin-bottom: 22px;
   max-width: 280px;
-}
-
-.testmonial .description i {
-  opacity: .8;
 }
 
 .testmonial .title {
@@ -11508,7 +11503,6 @@ a {
 
 .testmonial .text-muted {
   margin: 0;
-  opacity: .8;
   font-weight: 400;
   font-size: 13px;
 }
