@@ -1,3 +1,4 @@
-theme: 
-title: Abie's Website
-description: Welcome to my website.
+title                    : "Abie's Website"
+title_separator          : "-"
+name                     : &name "Abie"
+description              : &description "This website is my portfolio!"
