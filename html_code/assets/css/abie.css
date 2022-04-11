@@ -10943,7 +10943,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #f77100 !important;
+  color: var(--primary) !important;
 }
 
 .text-secondary {
