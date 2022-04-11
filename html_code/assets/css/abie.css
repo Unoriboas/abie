@@ -11897,7 +11897,7 @@ img.tower {
 }
 
 .swal-button {
-  background-color: #e900a3 !important;
+  background-color: var(--primary) !important;
   color: #202020 !important;
   border: none;
   box-shadow: none;
@@ -11910,16 +11910,16 @@ img.tower {
 }
 
 .swal-button:not([disabled]):hover {
-  background-color: #e900a3 !important;
+  background-color: var(--primary) !important;
 }
 
 .swal-button:active {
-  background-color: #e900a3 !important;
+  background-color: var(--primary) !important;
 }
 
 .swal-button:focus {
   outline:none;
-  box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,132,.29) !important;
+  box-shadow:0 0 0 1px #fff,0 0 0 3px var(--primary) !important;
 }
 
 .swal-button[disabled]{
