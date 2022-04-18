@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // Load translations for the given locale and translate
 // the page to this locale
 async function setLocale(newLocale) {
+    switchColor(newLocale);
+
     if (newLocale === locale) return;
     const newTranslations =
         await fetchTranslationsFor(newLocale);
@@ -72,4 +74,18 @@ function bindLocaleSwitcher() {
             setLocale(event.currentTarget.id)
         })
     })
+}
+
+function switchColor(switchingLocale) {
+    const buttons = document.querySelectorAll('.js-locale')
+    const element = document.querySelector(`#${switchingLocale}`);
+    for (let child of buttons) {
+        if (child === element) {
+            child.firstChild.classList.add('text-primary')
+            child.firstChild.classList.remove('text-white')
+        } else {
+            child.firstChild.classList.add('text-white')
+            child.firstChild.classList.remove('text-primary')
+        }
+    }
 }
