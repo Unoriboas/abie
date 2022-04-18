@@ -52,8 +52,15 @@ function translatePage() {
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
 function translateElement(element) {
+    if (element === null) {
+        return
+    }
     const key = element.id;
-    element.innerText = translations[key];
+    let lastNode = element;
+    while (lastNode.children.length !== 0) {
+        lastNode = element.children[0];
+    }
+    lastNode.innerText = translations[key];
 }
 
 function bindLocaleSwitcher() {
