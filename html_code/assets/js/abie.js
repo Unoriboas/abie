@@ -22,6 +22,7 @@ let translations = {};
 document.addEventListener("DOMContentLoaded", () => {
     // Translate the page to the default locale
     setLocale(defaultLocale);
+    bindLocaleSwitcher();
 });
 // Load translations for the given locale and translate
 // the page to this locale
@@ -36,7 +37,7 @@ async function setLocale(newLocale) {
 // Retrieve translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-    const response = await fetch(`translations/${newLocale}.json`);
+    const response = await fetch(`html_code/assets/js/translations/${newLocale}.json`);
     return response.json();
 }
 // Replace the inner text of each element that has a
@@ -44,31 +45,24 @@ async function fetchTranslationsFor(newLocale) {
 // to its data-i18n-key
 function translatePage() {
     document
-        .querySelectorAll("[data-i18n-key]")
+        .querySelectorAll(".data-i18n-key")
         .forEach(translateElement);
 }
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
 function translateElement(element) {
-    const key = element.getAttribute("data-i18n-key");
-    const translation = translations[key];
-    element.innerText = translation;
+    const key = element.id;
+    element.innerText = translations[key];
 }
 
-const defaultLocale = "en";
-let locale;
-document.addEventListener("DOMContentLoaded", () => {
-    setLocale(defaultLocale);
-    bindLocaleSwitcher(defaultLocale);
-});
-function bindLocaleSwitcher(initialValue) {
-    const switcher =
-        document.querySelector("[data-i18n-switcher]");
-    switcher.value = initialValue;
-    switcher.onchange = (e) => {
-        setLocale(e.target.value);
-    };
+function bindLocaleSwitcher() {
+    const switches =
+        document.querySelectorAll(".js-locale");
+    switches.forEach(item => {
+        item.addEventListener("click",event => {
+            event.preventDefault();
+            setLocale(event.currentTarget.id)
+        })
+    })
 }
-
-
