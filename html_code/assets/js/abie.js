@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Load translations for the given locale and translate
 // the page to this locale
-async function setLocale(newLocale) {
+async function setLocale(newLocale, fadeIn = false) {
     switchColor(newLocale);
 
     if (newLocale === locale) return;
@@ -34,7 +34,7 @@ async function setLocale(newLocale) {
         await fetchTranslationsFor(newLocale);
     locale = newLocale;
     translations = newTranslations;
-    translatePage();
+    translatePage(fadeIn);
 }
 // Retrieve translations JSON object for the given
 // locale over the network
@@ -45,15 +45,15 @@ async function fetchTranslationsFor(newLocale) {
 // Replace the inner text of each element that has a
 // data-i18n-key attribute with the translation corresponding
 // to its data-i18n-key
-function translatePage() {
+function translatePage(fadeIn) {
     document
         .querySelectorAll(".data-i18n-key")
-        .forEach(translateElement);
+        .forEach(item => translateElement(item, fadeIn));
 }
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
-function translateElement(element) {
+async function translateElement(element, fadeIn) {
     if (element === null) {
         return
     }
@@ -62,7 +62,14 @@ function translateElement(element) {
     while (lastNode.children.length !== 0) {
         lastNode = element.children[0];
     }
-    lastNode.innerText = translations[key];
+    if (fadeIn) {
+        $(lastNode).slideToggle(400, 'linear', function () {
+            lastNode.innerText = translations[key];
+            $(lastNode).slideToggle()
+        })
+    } else {
+        lastNode.innerText = translations[key];
+    }
 }
 
 function bindLocaleSwitcher() {
@@ -71,7 +78,7 @@ function bindLocaleSwitcher() {
     switches.forEach(item => {
         item.addEventListener("click",event => {
             event.preventDefault();
-            setLocale(event.currentTarget.id)
+            setLocale(event.currentTarget.id, true)
         })
     })
 }
