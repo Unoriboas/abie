@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Load translations for the given locale and translate
 // the page to this locale
-async function setLocale(newLocale, fadeIn = false) {
+async function setLocale(newLocale, fadeToggle = false) {
     switchColor(newLocale);
 
     if (newLocale === locale) return;
@@ -34,7 +34,7 @@ async function setLocale(newLocale, fadeIn = false) {
         await fetchTranslationsFor(newLocale);
     locale = newLocale;
     translations = newTranslations;
-    translatePage(fadeIn);
+    translatePage(fadeToggle);
 }
 // Retrieve translations JSON object for the given
 // locale over the network
@@ -45,15 +45,15 @@ async function fetchTranslationsFor(newLocale) {
 // Replace the inner text of each element that has a
 // data-i18n-key attribute with the translation corresponding
 // to its data-i18n-key
-function translatePage(fadeIn) {
+function translatePage(fadeToggle) {
     document
         .querySelectorAll(".data-i18n-key")
-        .forEach(item => translateElement(item, fadeIn));
+        .forEach(item => translateElement(item, fadeToggle));
 }
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
-async function translateElement(element, fadeIn) {
+async function translateElement(element, fadeToggle) {
     if (element === null) {
         return
     }
@@ -62,10 +62,10 @@ async function translateElement(element, fadeIn) {
     while (lastNode.children.length !== 0) {
         lastNode = element.children[0];
     }
-    if (fadeIn) {
-        $(lastNode).slideToggle(400, 'linear', function () {
+    if (fadeToggle) {
+        $(lastNode).fadeToggle(500, 'swing', function () {
             lastNode.innerText = translations[key];
-            $(lastNode).slideToggle()
+            $(lastNode).fadeToggle()
         })
     } else {
         lastNode.innerText = translations[key];
