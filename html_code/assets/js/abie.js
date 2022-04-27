@@ -13,6 +13,7 @@
 
 // The locale our app first shows
 const defaultLocale = "en";
+const supportedLocales = ["en", "fr"];
 // The active locale
 let locale;
 // Gets filled with active locale translations
@@ -95,4 +96,24 @@ function switchColor(switchingLocale) {
             child.firstChild.classList.remove('text-primary')
         }
     }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const initialLocale =
+        supportedOrDefault(browserLocales(true));
+    setLocale(initialLocale);
+});
+
+function isSupported(locale) {
+    return supportedLocales.indexOf(locale) > -1;
+}
+
+function supportedOrDefault(locales) {
+    return locales.find(isSupported) || defaultLocale;
+}
+
+function browserLocales(languageCodeOnly = false) {
+    return navigator.languages.map((locale) =>
+        languageCodeOnly ? locale.split("-")[0] : locale,
+    );
 }
