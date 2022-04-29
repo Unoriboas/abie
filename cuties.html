@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THIS PAGE IS PERSONAL! DO NOT LOOK! -->
+<head>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (event.target.getAttribute("role")) {
+                    return;
+                }
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    const hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 650, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        }); // smooth scroll code
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title id="title" class="">Abie's Website</title>
+    <meta content="Abie's Website" property="og:title" />
+    <meta content="This is my portfolio, my website. - Abie"
+          property="og:description" />
+    <meta content="https://unoriboas.github.io/abie/" property="og:url" />
+    <meta content="https://i.imgur.com/Smf8Izn.jpg" property="og:image" />
+    <meta content="#e900a3" data-react-helmet="true" name="theme-color" />
+    <!-- font icons -->
+    <link rel="stylesheet"
+          href="html_code/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + ABIE main styles -->
+    <link rel="stylesheet" href="html_code/assets/css/abie.css">
+    <link rel="icon" href="html_code/assets/imgs/logo.jpg"
+          type="image/icon">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<nav id="scrollspy" class="navbar page-navbar navbar-dark
+            navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="navbar-brand" href="#home"><strong
+                class="text-primary" id="title2">ABIE'S WEBSITE</strong><span
+                class="text-light"></span></a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="Tab-AboutMe" href="index.html">Return</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="header d-flex justify-content-center">
+    <div class="container">
+        <div class="row h-100 align-items-center2
+justify-content-around">
+            <div class="col-md-7">
+                <div class="header-content">
+                    <div class="text-center">
+                        <h3 class="header-title"><strong
+                                class="text-primary">CONGRATS</strong></h3>
+                        <h4 class="header-subtitle"><strong
+                                id="MP-TextTop" class="text-white">You found the secret page!</strong></h4>
+                        <p id="MP-TextSub" class="text-white">This page is dedicated to those who have helped me, and to the entirety of a specific server.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="section" id="explanation">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-8">
+                <h2 class="" id="AboutMe-Title"><strong class="text-primary">HELLO</strong></h2>
+                <p id="AboutMe-Sub" class="subtitle">
+                    <strong class="text-white">Well, since you're here..</strong>
+                </p>
+                <p id="AboutMe-T1" class="text-white">That means you're probably a member of that server! Or you're intelligent enough to figure out how to get here.
+                </p>
+                <p id="AboutMe-T2" class="text-white">To the server members : Thank all of you. Thank you for being there with me and being the most amazing people I know.
+                </p>
+                <p id="AboutMe-T3" class="text-white">If you're someone else : Nice, you're going to learn some more about me.
+                </p>
+                <p id="AboutMe-T4" class="text-white">So, if you clicked the spoiler on the previous pages - you'll know I'm trans! Please call me Abie, use she/her, and we'll be fine.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-around text-right">
+            <div class="col-lg-4 d-lg-block align-self-center">
+                <a
+                        href="https://imgur.com/a/piAroXk"
+                        class="contact-card">
+                    <img src="html_code/assets/imgs/cuties1.jpg"
+                         alt="Computer with Javascript" class="w-100
+                                p-2">
+                    <p class="text-center"><small class="text-unselected">Croquette</small></p>
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <h2 class=""><strong class="text-primary">CUTE STUFF</strong></h2>
+                <p class="subtitle">
+                    <strong class="text-white">First off, here's a picture of Croquette.</strong>
+                </p>
+                <p class="text-white">Croquette is a plush I got when visiting a friend!
+                </p>
+                <p class="text-white">Since then, it comfortably sits on my pillow when I'm on my desktop, or in my bed if I'm in VR.
+                </p>
+                <p class="text-white">Speaking about VR, I love VR! I love playing games like VRChat where I get to meet other people and hug them!
+                </p>
+                <p class="text-white">I also like BoneWorks, Half-Life: Alyx and Beat Saber, although I suck at Beat Saber.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section justify-content-center has-gradient-bg">
+    <div class="container">
+        <div class="row align-items-center2 justify-content-around">
+            <div class="col-lg-8">
+                <h2 class="text-center"><strong class="text-primary">MUSIC</strong></h2>
+                <p class="subtitle text-center">
+                    <strong class="text-white">Let's talk about what music I like.</strong>
+                </p>
+                <ul class="list-unstyled mt-4">
+                    <li class="media mb-4">
+                        <div class="circle-40 mr-3 mt-1"><em
+                                class="ti-music"></em></div>
+                        <div class="media-body">
+                            <h6 class="mb-2"><strong class="text-white">Lo-Fi</strong></h6>
+                            <p class="text-white">I love lo-fi. It's a great part of what I like to listen to! My playlist has a lot of it.</p>
+                        </div>
+                    </li>
+                    <li class="media text-right mb-4">
+                        <div class="media-body">
+                            <h6 class="mb-2"><strong class="text-white">Funk</strong></h6>
+                            <p class="text-white">For a lot of my time online, I've been listening to funk songs. They're really fun to listen to.</p>
+                        </div>
+                        <div class="circle-40 ml-3 mt-1"><em
+                                class="ti-music-alt"></em></div>
+                    </li>
+                    <li class="media mb-4">
+                        <div class="circle-40 mr-3 mt-1"><em
+                                class="ti-music"></em></div>
+                        <div class="media-body">
+                            <h6 class="mb-2"><strong class="text-white">Pop</strong></h6>
+                            <p class="text-white">This genre is vast, I know, there's citypop and hyperpop : but honestly, I listen to everything.</p>
+                        </div>
+                    </li>
+                    <li class="media text-right mb-4">
+                        <div class="media-body">
+                            <h6 class="mb-2"><strong class="text-white">Phonk</strong></h6>
+                            <p class="text-white">This is a genre I've discovered only recently, and I like it. It's great for fighting games or when I go to the gym.</p>
+                        </div>
+                        <div class="circle-40 ml-3 mt-1"><em
+                                class="ti-music-alt"></em></div>
+                    </li>
+                </ul>
+                <p class="subtitle text-center">
+                    <strong class="text-white">But like I said, to be fair, I listen to everything!</strong>
+                </p>
+                <p class="text-center"><a
+                        href="https://music.youtube.com/playlist?list=PLQdONX05OKKgCbj14BuAXE5MmBtZn0O51"
+                        class="link">Feel free to take a look at my playlist.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-lg-8">
+                <h2 class=""><strong class="text-primary">CUTIES</strong></h2>
+                <p class="subtitle">
+                    <strong class="text-white">Time to talk about those who care about me.</strong>
+                </p>
+                <p class="text-white">We have Star, my boyfriend. He's been with me for almost 2 years and he has constantly been there for me. I love him.
+                </p>
+                <p class="text-white">And we also have the entirety of Femme Folk! Love you all, you're all so cute and so nice.
+                </p>
+                <p class="text-white">That's pretty much all the cuties I can mention.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="section" id="credits">
+    <div class="container">
+        <div class="social-txt">
+            <h1 class="text-primary text-center">SOURCES</h1>
+            <p class="text-white text-center">All images are by me, licensed under a Creative Commons Attribution 2.0.</p>
+            <p class="text-white text-center">(and the entirety of Femme Folk for being amazing.)</p>
+        </div>
+    </div>
+</div>
+<footer class="footer py-4 bg-dark text-light">
+    <div class="container text-center">
+        <p class="mb-4 small">Copyright <script>document.write(new Date().getFullYear().toString())</script>
+            &copy; <a href="https://github.com/Unoriboas">Unoriboas</a>, all images through CC.</p>
+        <div class="social-links">
+            <a href="https://github.com/Unoriboas" class="link"><em
+                    class="ti-github"></em></a>
+            <a href="https://discord.com/users/371241528514838528"
+               class="link"><em class="ti-game"></em></a>
+            <a href="mailto:unoriboas.bis@gmail.com" class="link"><em
+                    class="ti-email"></em></a>
+        </div>
+    </div>
+</footer>
+<!-- core  -->
+<script src="html_code/assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="html_code/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+<!-- bootstrap 3 affix -->
+<script src="html_code/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+<!-- ABIE js -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="html_code/assets/js/abie.js"></script>
+</body>
+</html>

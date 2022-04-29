@@ -51,7 +51,7 @@ var allowedKeys = {
   });
   
 // Get the root element
-var r = document.querySelector(':root');
+const r = document.querySelector(':root');
 
 // Create a function for setting a variable value
 function myFunction_set() {
@@ -59,14 +59,20 @@ function myFunction_set() {
   r.style.setProperty('--gray-dark', '#a16ae8');
 }
 
-  function activateCheats() {  
+function unlockSecretTab() {
+    const blep = document.querySelector('#Tab-Secret');
+    blep.classList.remove('invisible2');
+}
+
+function activateCheats() {
     var audio = new Audio('html_code/assets/audio/unlock.mp3');
     myFunction_set();
     audio.play();
+    unlockSecretTab();
     swal({
         title: 'Welcome to the secret level!',
         text: 'Collect your coins here.',
         background: 'gray',
         button: 'Hell yeah.'
     })
-}    
+}

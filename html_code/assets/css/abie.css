@@ -193,13 +193,13 @@ sup {
 }
 
 a {
-  color: #e900a3;
+  color: var(--primary);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #e900a3;
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -11040,6 +11040,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.invisible2 {
+  display: none !important;
 }
 
 @media print {
