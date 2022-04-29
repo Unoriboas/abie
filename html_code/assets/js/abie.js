@@ -21,10 +21,10 @@ let translations = {};
 
 // When the page content is ready...
 document.addEventListener("DOMContentLoaded", () => {
-    // Translate the page to the default locale
-    setLocale(defaultLocale);
+    setLocale(supportedOrDefault(browserLocales(true)));
     bindLocaleSwitcher();
 });
+
 // Load translations for the given locale and translate
 // the page to this locale
 async function setLocale(newLocale, fadeToggle = false) {
@@ -98,20 +98,22 @@ function switchColor(switchingLocale) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const initialLocale =
-        supportedOrDefault(browserLocales(true));
-    setLocale(initialLocale);
-});
-
+// function below checks if language is supported by the website
 function isSupported(locale) {
     return supportedLocales.indexOf(locale) > -1;
 }
 
+// if the language is supported - apply supported. else apply the default locale (english)
 function supportedOrDefault(locales) {
     return locales.find(isSupported) || defaultLocale;
 }
 
+/**
+ * Retrieve user-preferred locales from the browser
+ * @param {boolean} languageCodeOnly - when true, returns
+ * ["en", "fr"] instead of ["en-US", "fr-FR"]
+ * @returns array | undefined
+ */
 function browserLocales(languageCodeOnly = false) {
     return navigator.languages.map((locale) =>
         languageCodeOnly ? locale.split("-")[0] : locale,
