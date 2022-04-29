@@ -106,8 +106,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
-.spoiler, .spoiler2{ 
-  color: black; 
+.spoiler, .spoiler2{
+  color: black;
   background-color:black;
 }
 
@@ -115,8 +115,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gray);
   }
 
-.spoiler2:hover { 
-  background-color:var(--gray); 
+.spoiler2:hover {
+  background-color:var(--gray);
   }
 
 p {
@@ -11846,7 +11846,7 @@ img.tower {
   width: 478px;
   opacity: 0;
   pointer-events: none;
-  background-color: #202020 !important; 
+  background-color: #202020 !important;
   text-align: center;
   border-radius: 5px;
   position: static;
@@ -11921,7 +11921,14 @@ img.tower {
   opacity:.5;
   cursor:default
 }
-  
+
 .swal-button::-moz-focus-inner{
   border:0
+}
+
+.konami-img {
+  margin-top: 10px;
+  height: 20px;
+  width: 200px;
+  opacity: 50%;
 }
